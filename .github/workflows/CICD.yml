@@ -51,7 +51,7 @@ jobs:
         run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
         id: extract_branch
       - name: print name of variable
-        run: echo "extracted branch name is :${{ steps.extract_branch.outputs.branch }}"
+        run: echo "extractegi branch name is :${{ steps.extract_branch.outputs.branch }}"
       - name: Terraform Format Check
         run: terraform fmt -check
       - name: Terraform Init
