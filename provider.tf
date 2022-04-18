@@ -1,4 +1,4 @@
 provider "google" {
-  project = "datacloud-346017"
+  project = "githubonprem"
   region  = "europe-west1"
 }

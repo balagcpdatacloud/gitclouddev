@@ -37,7 +37,7 @@ jobs:
         uses: "google-github-actions/auth@v0"
         with:
           # Replace with your Workload Identity Provider Location
-          workload_identity_provider: "projects/915181581756/locations/global/workloadIdentityPools/github-identity-pool/providers/github"
+          workload_identity_provider: "projects/828050091050/locations/global/workloadIdentityPools/github-identity-pool/providers/github"
           # Replace with your GitHub Service Account
           service_account: "github-actions-service-account@datacloud-346017.iam.gserviceaccount.com"
       - name: "setup Terraform"
@@ -64,7 +64,3 @@ jobs:
         shell: bash
         run: |
            terraform plan -var-file=${{steps.extract_branch.outputs.branch}}.tfvars -out=deployment.plan
-      - name: Terraform apply
-        shell: bash
-        run: |
-           terraform apply deployment.plan

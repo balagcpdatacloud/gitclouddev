@@ -1,6 +1,6 @@
-project_id  = "datacloud-346017"
-suffix      = dev
-prefix      = datacloud
-bucket_name = "my-dev-bucket-346017"
+project_id  = "githubonprem"
+suffix      = test
+prefix      = githubonprem
+bucket_name = "my-dev-bucket-githubonprem"
 
 
