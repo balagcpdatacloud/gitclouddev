@@ -50,7 +50,7 @@ jobs:
         shell: bash
         run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
         id: extract_branch
-      - name: print name of variable
+      - name: print name of variablee
         run: echo "extractegi branch name is :${{ steps.extract_branch.outputs.branch }}"
       - name: Terraform Format Check
         run: terraform fmt -check
