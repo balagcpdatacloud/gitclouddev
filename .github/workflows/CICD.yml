@@ -54,6 +54,8 @@ jobs:
         run: echo "extractegi branch name is :${{ steps.extract_branch.outputs.branch }}"
       - name: Terraform Format Check
         run: terraform fmt -check
+      - name: change sdk
+        run: gcloud config set project githubonprem  
       - name: Terraform Init
         shell: bash
         run: |
