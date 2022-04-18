@@ -1,6 +1,6 @@
 terraform {
   backend "gcs" {
-    bucket = "datacloud-terraform-statee-file"
+    bucket = "terraform-state-file-githubonprem"
     prefix = "dev"
   }
 
