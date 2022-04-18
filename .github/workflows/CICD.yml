@@ -57,7 +57,7 @@ jobs:
       - name: Terraform Init
         shell: bash
         run: |
-          terraform init -backend-config=prefix=${{steps.extract_branch.outputs.branch}} -reconfigure
+          terraform init -backend-config=prefix=${{steps.extract_branch.outputs.branch}}
       - name: Terraform validate
         run: terraform validate -no-color
       - name: Terraform plann
