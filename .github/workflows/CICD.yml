@@ -39,7 +39,7 @@ jobs:
           # Replace with your Workload Identity Provider Location
           workload_identity_provider: "projects/828050091050/locations/global/workloadIdentityPools/github-identity-pool/providers/github"
           # Replace with your GitHub Service Account
-          service_account: "github-actions-service-account@datacloud-346017.iam.gserviceaccount.com"
+          service_account: "github-actions-service-account@githubonprem.iam.gserviceaccount.com"
       - name: "setup Terraform"
         uses: hashicorp/setup-terraform@v1
         with:
