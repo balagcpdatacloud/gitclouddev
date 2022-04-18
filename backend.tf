@@ -1,6 +1,6 @@
 terraform {
   backend "gcs" {
-    bucket = "terraform-state-file-githubonprem"
+    bucket = "githubonprem-terraform-statefiles"
     prefix = "test"
   }
 
